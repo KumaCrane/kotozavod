@@ -1,19 +1,15 @@
-<<<<<<< Updated upstream
-/* === Общие стили === */
-=======
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
 :root {
---accent: #4a90e2;
---accent-dark: #2c6ed5;
---bg-color: #f7f9fc;
+--accent: #89c2ff;
+--accent-dark: #468df0;
+--bg-color: #f8fbff;
 
   --text-color: #333;
   --card-bg: #ffffff;
   --shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
->>>>>>> Stashed changes
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
@@ -59,9 +55,6 @@ a:hover {
   position: relative;
 }
 
-<<<<<<< Updated upstream
-/* === Контент под шапкой === */
-=======
 /* Ушки кота */
 .logo::before,
 .logo::after {
@@ -94,7 +87,6 @@ a:hover {
 }
 
 /* === Контент === */
->>>>>>> Stashed changes
 .content {
   max-width: 1000px;
   margin: 30px auto;
@@ -102,15 +94,11 @@ a:hover {
   animation: fadeIn 0.8s ease;
 }
 
-<<<<<<< Updated upstream
-/* === Карточки котов / клиентов === */
-=======
 h1, h2, h3 {
   color: var(--accent-dark);
 }
 
 /* === Главная === */
->>>>>>> Stashed changes
 .samples, .clients {
   display: flex;
   flex-wrap: wrap;
@@ -154,12 +142,6 @@ h1, h2, h3 {
   overflow: hidden;
 }
 
-<<<<<<< Updated upstream
-.cat-parts {
-  flex: 1;
-}
-
-=======
 /* Анимация котика */
 #cat-display {
   position: relative;
@@ -190,82 +172,10 @@ h1, h2, h3 {
   box-shadow: var(--shadow);
   padding: 20px;
 }
->>>>>>> Stashed changes
 .cat-parts ul {
   list-style: none;
   padding: 0;
 }
-<<<<<<< Updated upstream
-
-.cat-parts li {
-  background: white;
-  border: 1px solid #ddd;
-  margin-bottom: 8px;
-  padding: 8px;
-  border-radius: 6px;
-}
-
-.cat-parts button {
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 8px 12px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.cat-parts button:hover {
-  background-color: #555;
-}
-
-/* === Форма на заводе === */
-.fake-form {
-  margin-top: 20px;
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  max-width: 400px;
-}
-
-.fake-form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.fake-form input[type="text"],
-.fake-form input[type="email"] {
-  width: 100%;
-  padding: 6px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-.fake-form button {
-  margin-top: 10px;
-  padding: 8px 12px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.fake-form button:hover {
-  background-color: #555;
-}
-
-/* === Корзина === */
-.cart {
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  max-width: 500px;
-}
-=======
 .cat-parts li {
   margin-bottom: 15px;
 }
@@ -316,7 +226,6 @@ button:active {
   color: var(--accent-dark);
   font-weight: 600;
 }
-
 /* === Корзина === */
 .cat-item {
   display: flex;
@@ -370,36 +279,3 @@ footer {
     margin-left: 10px;
   }
 }
-
-/* === Тост (уведомление) === */
-#toast-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 2000;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-}
-
-.toast {
-  background: var(--accent-dark);
-  color: white;
-  padding: 10px 18px;
-  border-radius: 16px;
-  box-shadow: var(--shadow);
-  font-weight: 600;
-  animation: fadeSlide 0.3s ease, fadeOut 0.3s ease 2s forwards;
-}
-
-@keyframes fadeSlide {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeOut {
-  to { opacity: 0; transform: translateY(-10px); }
-}
-
->>>>>>> Stashed changes
